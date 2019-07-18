@@ -30,11 +30,11 @@ class MainActivity : AppCompatActivity() {
 
 //        val customTabsIntent = CustomTabsIntent.Builder().build()
 
-//        val intent = Intent(this, cameraActivity::class.java)
+//        val intent = Intent(this, CameraActivity::class.java)
 //        intent.putExtra("samplename", "abd")
 //        startActivity(intent)
 
-        var url = "https://649335ba.ngrok.io/today";
+        var url = "https://pasha.rakuten.co.jp/today";
         var builder =  CustomTabsIntent.Builder();
         var customTabsIntent = builder.build();
         customTabsIntent.launchUrl(this, Uri.parse(url));
